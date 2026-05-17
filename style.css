@@ -1,0 +1,101 @@
+@font-face {
+    font-family: TTLakes;
+    src: url('./TTLakes/TTLakes-Medium.woff') format('woff');
+}
+
+body {
+    font-family: TTLakes, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.burger {
+    width: 40px;
+    height: 40px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+.burger:hover {
+    transform: scale(1.08);
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    min-height: 64px;
+}
+.menu_nav { 
+    flex: 1; 
+    padding: 20px 0; 
+}
+.menu_nav_item {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    background: none;
+    border: none;
+    text-align: left;
+    border-left: 5px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu_nav_item:hover {
+    border-left: 5px solid #41F6D7;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: white;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+@media(min-width: 1200px) {
+    .page-cps .nav-list {
+        display: flex;
+    }
+    .page-cps .nav-btn {
+        display: block;
+    }
+    .page-cps .nav-footer {
+        display: flex;
+    }
+    .page-cps .menu-toggle {
+        display: none;
+    }
+} 
