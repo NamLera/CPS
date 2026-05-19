@@ -4,141 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="overlay" id="overlay"></div>
 
     <aside class="nav-menu" id="navMenu">
-
         <div class="nav-menu_header">
             <button class="icon" id="navMenuClose">
-                <img src="assets/burger.svg" alt="Menu Close">
+                <img src="assets/burger.svg" alt="Закрыть">
             </button>
-                <div class="nav-menu_logo">
-                    <a href="#"><img src="assets/Group.svg" alt="CPS Logo"></a>
-                </div>
-        
-            <button class="icon" aria-label="Поиск">
-                <img src="assets/search.svg" alt="Search Icon">
+            <div class="nav-menu_logo">
+                <a href="#"><img src="assets/Group.svg" alt="logo CSP"></a>
+            </div>
+            <button class="icon">
+                <img src="assets/search.svg" alt="Поиск">
             </button>
         </div>
-    
-    
-        <!-- Navigation -->
-        <nav class="nav-menu__nav" aria-label="Главное меню">
+
+        <nav class="nav-menu_nav">
             <ul class="nav-menu_list">
-                <li><button class="nav-menu_item">
-                    <a href="#"> Ремонт техники</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#" class="active">Услуги и сервисы</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#">Корпоративным клиентам</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#">Продавцам техники</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#">Партнерам</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#">Производителям</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#">Наши сервисные центры</a>
-                </button></li>
-        
-                <li><button class="nav-menu_item">
-                    <a href="#">Контакты</a>
-                </button></li>
+                <li><button class="nav-menu_item"><a href="#">Ремонт техники</a></button></li>
+                <li><button class="nav-menu_item nav-menu__item--active">Услуги и сервисы</button></li>
+                <li><button class="nav-menu_item"><a href="#">Корпоративным клиентам</a></button></li>
+                <li><button class="nav-menu_item"><a href="#">Продавцам техники</a></button></li>
+                <li><button class="nav-menu_item"><a href="#">Партнерам</a></button></li>
+                <li><button class="nav-menu_item"><a href="#">Производителям</a></button></li>
+                <li><button class="nav-menu_item"><a href="#">Наши сервисные центры</a></button></li>
+                <li><button class="nav-menu_item"><a href="#">Контакты</a></button></li>
             </ul>
         </nav>
-    
-    
+
         <div class="nav-menu_footer">
             <div class="nav-menu_footer-icons">
                 <button class="icon">
-                    <img src="assets/chat copy.svg" alt="Phone Icon">
+                    <img src="assets/chat copy.svg" alt="Телефон">
                 </button>
                 <button class="icon">
-                    <img src="assets/chat.svg" alt="Chat Icon">
+                    <img src="assets/chat.svg" alt="Чат">
                 </button>
                 <button class="icon">
-                    <img src="assets/profile.svg" alt="Profile Icon">
+                    <img src="assets/profile.svg" alt="Профиль">
                 </button>
             </div>
-    
-    
-            <div class="nav-menu__contacts">
-                <div class="nav-menu_footer_email">mail@cps.com</div>
-                <div class="nav-menu_footer_phone">8 800 890 8900</div>
+
+            <div class="nav-menu_contacts">
+                <span class="nav-menu_email">mail@cps.com</span>
+                <span class="nav-menu_phone">8 800 890 8900</span>
             </div>
-                <div class="nav-menu_footer_lang">
-                    <span class="nav-lang_active nav-menu__lang-item--active">RU</span>
-                    <span class="nav-lang_active">EN</span>
-                    <span class="nav-lang_active">CH</span>
-                </div>
+            <div class="nav-menu_lang">
+                <span class="nav-menu_lang nav-menu__lang--active">RU</span>
+                <span class="nav-menu_lang">EN</span>
+                <span class="nav-menu_lang">CH</span>
+            </div>
         </div>
     </aside>
 
-    <!--Header-->
+
     <header class="site-header">
         <div class="site-header_inner">
 
             <div class="site-header_left">
-                <button class="icon" id="mainMenu" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMenu">
-                    <img src="assets/burger 1.svg" alt="Menu Open">
+                <button class="icon" id="mainMenuOpen">
+                    <img src="assets/burger 1.svg" alt="Меню">
                 </button>
-
-                <!-- Logo -->
-                <div class="site-header__logo">
-                    <a href="#"><img src="assets/Group.svg" alt="CPS Logo"></a>
+                <div class="site-header_logo">
+                    <a href="#"><img src="assets/Group.svg" alt="CPS logo"></a>
                 </div>
-        </div>
-    
-            <nav class="site-header_actions">
-                <button class="action_icon" type="button">
+            </div>
+
+            <nav class="site-heade_actions">
+                <button class="actions">
                     Оставить заявку
-                    <span class="icon icon-sm">
-                        <img class="icon" src="assets/repair.svg" alt="Repair Icon">
+                    <span class="icon">
+                        <img src="assets/repair.svg" alt="Заявка">
                     </span>
                 </button>
-                <button class="action_icon" type="button">
+                <button class="actions">
                     Статус ремонта
-                    <span class="icon icon-sm">
-                        <img class="icon" src="assets/checkstatus.svg" alt="Check Status Icon">
+                    <span class="icon">
+                        <img src="assets/checkstatus.svg" alt="Статус">
                     </span>
                 </button>
             </nav>
-    
-    
-            <!-- Tablet only -->
+
             <div class="site-header_right">
-                <button class="icon tablet_only">
-                    <img src="assets/chat copy.svg" alt="Phone Icon">
+                <button class="icon tablet-only">
+                    <img src="assets/chat copy.svg" alt="Телефон">
                 </button>
-                <button class="icon tablet_only">
-                    <img src="assets/chat.svg" alt="Chat Icon">
+                <button class="icon tablet-only">
+                    <img src="assets/chat.svg" alt="Чат">
                 </button>
-                <button class="icon tablet_only">
-                    <img src="assets/profile.svg" alt="Profile Icon">
+                <button class="icon tablet-only">
+                    <img src="assets/profile.svg" alt="Профиль">
                 </button>
+
                 <div class="site-header__divider tablet-only"></div>
-    
-                <!--Button repair/check-->
                 <button class="icon">
-                    <img src="assets/repair.svg" alt="Repair Icon">
+                    <img src="assets/repair.svg" alt="Заявка">
                 </button>
                 <button class="icon">
-                    <img src="assets/checkstatus.svg" alt="Check Status Icon">
+                    <img src="assets/checkstatus.svg" alt="Статус">
                 </button>
             </div>
 
@@ -146,41 +111,41 @@
     </header>
 
 
-    <!-- Main -->
     <main class="services-page">
+
         <h1 class="services-page_title">Услуги и сервисы</h1>
 
-        <div class="tabs" role="navigation" aria-label="Разделы">
-            <ul class="tabs__list">
-                <button class="tab_item tabs_item-active" role="tab">Ремонтируемые бренды</button>
-                <button class="tab_item" role="tab">Ремонтируемые устройства</button>
-                <button class="tab_item" role="tab">Дополнительные услуги</button>
-                <button class="tab_item" role="tab">Цены на услуги</button>
-                <button class="tab_item" role="tab">Адреса сервисных центров</button>
-                <button class="tab_item" role="tab">Специальные цены</button>
-                <button class="tab_item" role="tab">Отзывы</button>
-            </ul>
-        </div>
+        <ul>
+            <li><button class="taps_item tabs__item--active">Ремонтируемые бренды</button></li>
+            <li><button class="taps_item"></button>Ремонтируемые устройства</li>
+            <li><button class="taps_item"></button>Дополнительные услуги</li>
+            <li><button class="taps_item"></button>Цены на услуги</li>
+            <li><button class="taps_item"></button>Адреса сервисных центров</li>
+            <li><button class="taps_item"></button>Специальные цены</li>
+        </ul>
 
         <section class="service-content">
             <div class="service-content_body">
-                <span>Отзывы</span>
-                <div class="content_text">
-                    <p class="service-content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="service-content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                <span class="service-content_">Отзывы</span>
+                <p class="service-content_text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="service-content_text">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                </p>
 
-                    <button class="expand">
-                        <img src="assets/expand (далее).svg" alt="Expand Icon">
-                        Читать далее
-                    </button>
+                <button class="expand">
+                    <img src="assets/expand (далее).svg">
+                    Читать далее
+                </button>
+                <div class="service-content__images service-content__image-board--right">
+                    <img src="assets/_MG_3223.svg">
                 </div>
 
-                <img class="service-content__image" src="assets/_MG_3223.svg" alt="image">
             </div>
         </section>
-
+        
     </main>
-
 
 </body>
 </html>
