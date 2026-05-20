@@ -35,7 +35,7 @@
             </ul>
         </nav>
 
-        <div class="nav-menu_footer">
+        <div class="nav-menu__footer">
             <div class="nav-menu__footer-icons">
                 <button class="icon">
                     <img src="assets/chat copy.svg" alt="Телефон">
@@ -118,20 +118,19 @@
 
         <ul class="tabs__list">
             <li><button class="taps__item tabs__item--active">Ремонтируемые бренды</button></li>
-            <li><button class="taps__item"></button>Ремонтируемые устройства</li>
-            <li><button class="taps__item"></button>Дополнительные услуги</li>
-            <li><button class="taps__item"></button>Цены на услуги</li>
-            <li><button class="taps__item"></button>Адреса сервисных центров</li>
-            <li><button class="taps__item"></button>Специальные цены</li>
+            <li><button class="taps__item">Ремонтируемые устройства</button></li>
+            <li><button class="taps__item">Дополнительные услуги</button></li>
+            <li><button class="taps__item">Цены на услуги</button></li>
+            <li><button class="taps__item">Адреса сервисных центров</button></li>
+            <li><button class="taps__item">Отзывы</button></li>
         </ul>
 
         <section class="service-content">
-            <div class="service-content_body">
-                <span class="service-content_">Отзывы</span>
-                <p class="service-content_text">
+            <div class="service-content__body">
+                <p class="service-content__text">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 </p>
-                <p class="service-content_text">
+                <p class="service-content__text">
                     Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                 </p>
 
@@ -147,6 +146,20 @@
         </section>
         
     </main>
+
+    <script>
+    const navMenu = document.getElementById('navMenu');
+    const openBtn = document.getElementById('mainMenuOpen');
+    const closeBtn = document.getElementById('navMenuClose');
+
+    openBtn.addEventListener('click', () => {
+        navMenu.classList.add('nav-menu--open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        navMenu.classList.remove('nav-menu--open');
+    });
+</script>
 
 </body>
 </html>
