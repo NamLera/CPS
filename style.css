@@ -410,27 +410,25 @@ body {
 }
 
 @media (min-width: 1120px) {
-    .service-content {
-        gap: 60px; 
+    .site-header__right { 
+        display: none; 
     }
-    .site-header__inner {
-        grid-template-columns: auto 1fr auto;
-        padding: 0 40px;
+    #mainMenuOpen { 
+        display: none; 
+    }
+    .site-header__left .site-header__divider { 
+        display: none; 
+    }
+    .tablet-only { 
+        display: none; 
+    }
+    .site-header__logo {
+        display: none;
     }
     .site-header__actions {
         display: flex;
     }
-    .services-page {
-        padding: 40px;
-    }
-    .tablet-only {
-        display: none;
-    }
-    #mainMenuOpen { display: none; }
-    .service-content {
-        gap: 60px;
-    }
-    .site-header__right {
+    .site-header {
         display: none;
     }
 }
