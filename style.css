@@ -224,7 +224,7 @@ body {
     height: 50px;
     display: block;
 }
-.site-header__actions {
+.services-page__actions {
     display: none;
     align-items: center;
     justify-content: flex-end;
@@ -351,6 +351,12 @@ body {
     color: #1B1C21;
 }
 
+.services-page__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .expand {
     background: none;
     border: none;
@@ -425,7 +431,7 @@ body {
     .site-header__logo {
         display: none;
     }
-    .site-header__actions {
+    .services-page__actions {
         display: flex;
     }
     .site-header {
